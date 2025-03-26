@@ -1,0 +1,131 @@
+.cart-container {
+    width: 100%;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart__title {
+    font-family: "Markazi Text";
+    font-weight: 700;
+    font-size: 1.75em;
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.product-container {
+    height: 130px;
+    width: 500px;
+    padding: 1em 1.25em;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgb(122, 122, 122);
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.product-container:hover {
+    cursor: pointer;
+}
+
+.product__anchor {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: 0.5em;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.image-wrapper__image {
+    height: 96px;
+    width: 80px;
+    background-color: #ededed;
+    transition: transform 0.2s ease-out;
+}
+
+.image-wrapper__image:hover {
+    transform: scale(1.05);
+}
+
+.product__content {
+    display: block;
+    width: 350px;
+}
+
+.product__title {
+    width: 100%;
+}
+.product__title>h3 {
+    text-wrap: pretty;
+    font-size: 1.25em;
+    font-family: "Roboto";
+    transition: color 0.2s ease;
+    color: rgb(41, 41, 41);
+}
+
+.product__title>h3:hover {
+    color: rgb(82, 82, 82);
+}
+
+.product__description>pre {
+    width: auto;
+    position: relative;
+    font-size: 0.8em;
+    font-family: "Roboto";
+    text-wrap: no-wrap;
+    color: rgb(41, 41, 41);
+}
+
+.product__description {
+    position: relative;
+    overflow-x: hidden;
+    /*FINISH THIS*/
+}
+
+.product__description::before {
+    content: "";
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    z-index: 10;
+}
+
+.product__price {
+    justify-self: flex-start;
+    font-size: 1.25em;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: rgb(13, 94, 12);
+    margin-bottom: 0.1em;
+}
+
+.product__rating {
+    font-size: 0.8em;
+    font-family: "Roboto";
+    font-style: italic;
+    color: rgb(122, 122, 122)
+}
+
+.star {
+    color: rgb(226, 215, 11);
+    font-size: 1.25em;
+    margin-right: 0.2em;
+}
